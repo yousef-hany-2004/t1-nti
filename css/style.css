@@ -1,0 +1,188 @@
+body{
+    perspective: 600px;
+}
+/* start header section */
+/* start navbar home seaction */
+.navbar-home{
+   
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px;
+    margin-top: 20px;
+}
+.navbar-home a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar-home a:hover{
+    color: #0f7b65;
+}
+.navbar-home input{
+    color: #fff;
+    background-color:#ed7c6a;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .navbar-home {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .navbar-home a {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* end navbar home seaction */
+.header-home{
+    height: 800px;
+    background-image: url(../img/download.jpg);
+    background-size: cover;
+    
+    
+}
+.header-home p{
+    height:400px ;
+    background-color:#6eab94;
+    font-size: 50px; 
+    width: 500px;
+    margin-top: 200px;
+    border-radius: 20px;
+    letter-spacing: 4px;
+    margin-left: 100px;
+    padding-right: 50px;
+    
+
+}
+@media screen and (max-width: 768px) {
+    .header-home p {
+        width: 90%;
+        font-size: 30px;
+        margin-left: 5%;
+        margin-top: 70px;
+        height: 250px;
+    }
+    .header-home {
+    background-position: center;
+    }
+    
+}
+   .header-home input:hover,a:hover{
+    transform:scale(1.5) ;
+   }
+
+/* end header section */
+
+ /*  start clinic section  */
+
+.clinic-home {
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.clinic-home hr{
+    height:8px ;
+    width: 250px;
+    background-color:chocolate;
+}
+.clinic-text{
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content:center;
+   line-height: 2;
+   word-spacing: 4px;
+   
+}
+.clinic-text h3{
+    color:#0f7b65;
+}
+
+.clinic-home img:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+ /*  end clinic section  */
+
+.touch-home {
+   
+    position: relative;
+    padding: 100px 0 120px;
+    margin: 100px 0 150px;
+    background: url(../img/i-love-my-job-so-much_329181-2178.png) center / cover no-repeat;
+    /* القص المائل من الأعلى والأسفل مثل الصورة */
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+}
+
+/* طبقة اللون التيل فوق الصورة */
+.touch-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(58, 150, 148, 0.85);
+    z-index: 0;
+}
+
+.touch-home .container {
+    position: relative;
+    z-index: 1;
+}
+
+.touch-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.touch-card{
+    height: 400px;
+}
+.touch-div :hover{
+ transform: scale(0.9);
+}
+
+.touch-card img {
+    
+    height: 200px;
+   
+}
+
+.touch-card h3 {
+    color: #3a9a9a;
+    
+}
+
+
+
+
+
+/* start secation css */
+
+.account-home{
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+/* end secation css */
+
+/* start footer css */
+
+.footer-home{
+    background-color: #0f7b65;
+    border-radius: 100px 100px 0 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+h4{
+    color: rgb(135, 116, 4)
+
+}
+/* end footer css */
